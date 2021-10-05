@@ -11,3 +11,7 @@ Nombres de los colaboradores e información de contacto:
 ## Detalles del ejercicio
 * Crear un Archivo HTML y archivo JavaScript referenciados, que incluyan la definición y llamada de al menos tres funciones.
 
+Para interectuar con el proyecto sigue las informaciones:
+* User = 1234; // el numero de usuario para ingresar 
+* CuentaAmiga1 = 1234567
+* CuentaAmiga2 = 7654321
