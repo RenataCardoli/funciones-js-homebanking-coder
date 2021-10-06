@@ -14,4 +14,4 @@ Nombres de los colaboradores e información de contacto:
 Para interectuar con el proyecto sigue las informaciones:
 * User = 1234; // el numero de usuario para ingresar 
 * CuentaAmiga1 = 1234567
-* CuentaAmiga2 = 7654321
+
