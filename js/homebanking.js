@@ -14,7 +14,6 @@ var internet = 570;
 var cuentaServicio;
 var RealCuentaServicio;
 var CuentaAmiga1 = "1234567";
-var CuentaAmiga2 = "7654321";
 var NumeroCuenta;
 var ValorTransferir;
 var RealValorTransferir;
@@ -129,7 +128,7 @@ function transferirDinero() {
         alert("Ops! No hay saldo suficiente!");
         return;
     }else if (RealValorTransferir <= saldoCuenta) {
-        NumeroCuenta = prompt("Por favor, ingrese el numero de su cuenta");
+        NumeroCuenta = prompt("Por favor, ingrese el numero de la cuenta para transferir");
         VerificacionDeCuenta(NumeroCuenta);
         return;
     } 
@@ -180,17 +179,9 @@ function VerificacionDeCuenta(cuenta) {
         alert("Se han transferido $" + RealValorTransferir + "\nCuenta Destino: " + NumeroCuenta);
         actualizarSaldoEnPantalla();
         return;
-    } if (cuenta === CuentaAmiga2) {
-        saldoCuenta = saldoCuenta - RealValorTransferir
-        alert("Se han transferido $" + RealValorTransferir + "\nCuenta Destino: " + NumeroCuenta);
-        actualizarSaldoEnPantalla();
-        return;
     } if (cuenta != CuentaAmiga1){
         alert("Solo puede transferirse dinero a una cuenta amiga!");
-        return; // no anda bien 
-    } else if(cuenta != CuentaAmiga2){
-        alert("Solo puede transferirse dinero a una cuenta amiga!");
-        return;
+        return; 
     }
 }
 
