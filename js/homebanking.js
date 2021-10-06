@@ -32,9 +32,14 @@ window.onload = function () {
 function cambiarLimiteDeExtraccion() {
     var CambioValorExtraccion = prompt("Ingrese un valor $ para nuevo Limite de Extraccion: ");
     limiteExtraccion = parseInt(CambioValorExtraccion);
-        actualizarLimiteEnPantalla(limiteExtraccion);
-        alert("Has cambiado el valor de limite de extraccion para $" + limiteExtraccion);
+    if (isNaN(limiteExtraccion)) {
+        alert("Ops! digite un valor para depositar");
+        return;
+    } else {
+    actualizarLimiteEnPantalla(limiteExtraccion);
+    alert("Has cambiado el valor de limite de extraccion para $" + limiteExtraccion);
     }
+}
 
 
 function extraerDinero() {
