@@ -1,16 +1,16 @@
 //Declaración de variables
 var nombreUsuario = 'Renata Cardoso';
-var saldoCuenta = 3800;
-var limiteExtraccion = 4000;
+var saldoCuenta = 5000;
+var limiteExtraccion = 5000;
 var saldoAnterior;
 var SinValorParaExtraer;
 var valorMayorLimExtraer;
 var valorExtraer;
 var valorBillete100;
-var agua = 350;
-var luz = 210;
-var telefono = 425;
-var internet = 570;
+var agua = 500;
+var luz = 500;
+var telefono = 500;
+var internet = 2800;
 var cuentaServicio;
 var RealCuentaServicio;
 var CuentaTransfer = "1234567";
@@ -209,7 +209,7 @@ function VerificacionDeCuentaUser(NUser) {
 
 //Funciones que actualizan el valor de las variables en el HTML
 function cargarNombreEnPantalla() {
-    document.getElementById("nombre").innerHTML = "Bienvenido/a " + nombreUsuario;
+    document.getElementById("nombre").innerHTML = "Bienvenida " + nombreUsuario;
 }
 
 function actualizarSaldoEnPantalla() {
