@@ -13,7 +13,7 @@ var telefono = 425;
 var internet = 570;
 var cuentaServicio;
 var RealCuentaServicio;
-var CuentaAmiga1 = "1234567";
+var CuentaTransfer = "1234567";
 var NumeroCuenta;
 var ValorTransferir;
 var RealValorTransferir;
@@ -184,13 +184,13 @@ function PagosDeServicio() {
 }
 
 function VerificacionDeCuenta(cuenta) {
-    if (cuenta === CuentaAmiga1) {
+    if (cuenta === CuentaTransfer) {
         saldoCuenta = saldoCuenta - RealValorTransferir
         alert("Se han transferido $" + RealValorTransferir + "\nCuenta Destino: " + NumeroCuenta);
         actualizarSaldoEnPantalla();
         return;
-    } if (cuenta != CuentaAmiga1){
-        alert("Solo puede transferirse dinero a una cuenta amiga!");
+    } if (cuenta != CuentaTransfer){
+        alert("Solo puede transferirse dinero a cuenta válida!");
         return; 
     }
 }
