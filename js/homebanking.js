@@ -33,7 +33,7 @@ function cambiarLimiteDeExtraccion() {
     var CambioValorExtraccion = prompt("Ingrese un valor $ para nuevo Limite de Extraccion: ");
     limiteExtraccion = parseInt(CambioValorExtraccion);
     if (isNaN(limiteExtraccion)) {
-        alert("Ops! digite un valor para depositar");
+        alert("Ops! Digite un valor!");
         return;
     } else {
     actualizarLimiteEnPantalla(limiteExtraccion);
