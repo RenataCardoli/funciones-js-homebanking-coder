@@ -63,10 +63,15 @@ function depositarDinero() {
     var realvalorDeposito = prompt("Ingrese un valor $ para deposito: ");
     var valorDeposito = parseInt(realvalorDeposito);
     var saldoAnteriorAlDeposito = saldoCuenta;
+    if (isNaN(valorDeposito)) {
+        alert("Ops! digite un valor para depositar");
+        return;
+    } else {
     actualizarSaldoCuenta(valorDeposito);
     actualizarSaldoEnPantalla();
     alert("Has depositado $" + valorDeposito + "\nSaldo Anterior $" + saldoAnteriorAlDeposito + "\nSaldo Actual $" + saldoCuenta);
-    
+        return;
+    }    
 }
 
 function pagarServicio() {
